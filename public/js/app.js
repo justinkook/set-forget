@@ -49,6 +49,7 @@ const geocode = (e) => {
         .catch(function (err) {
             console.log(err);
         })
+
 };
 
 
@@ -65,20 +66,12 @@ function initMap() {
         });
 
     let markers = [{
-            coords: {
-                lat: -25.344,
-                lng: 131.036
-            },
-            content: '<h2> City, State </h2>'
+        coords: {
+            lat: 33.7490,
+            lng: 84.3880
         },
-        {
-            coords: {
-                lat: -20.344,
-                lng: 101.036
-            },
-            content: '<h2> City2, State2 </h2>'
-        }
-    ];
+        content: '<h4>Location of Address</h4>'
+    }, ];
 
     function addMarker(props) {
         let marker = new google.maps.Marker({
